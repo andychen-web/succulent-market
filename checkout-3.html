@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>多肉市集-登入</title>
+    <title>多肉市集-發票</title>
     <link rel="icon" href="./images/favicon.ico" />
     <!-- font awesome -->
     <link
@@ -49,10 +49,13 @@
             <a href="./product.html" class="nav-link text-bold"> 商品 </a>
           </li>
           <li class="nav-item">
-            <a href="./login.html" class="nav-link active text-bold"> 登入 </a>
+            <a href="./login.html" class="nav-link text-bold"> 登入 </a>
           </li>
-          <li class="nav-itemdocument">
-            <a href="./cart.html" class="nav-link d-flex align-items-center">
+          <li class="nav-item">
+            <a
+              href="./cart.html"
+              class="nav-link active d-flex align-items-center"
+            >
               <i
                 class="fa-solid fa-cart-shopping"
                 style="font-size: 1.3rem"
@@ -62,47 +65,87 @@
         </ul>
       </div>
     </nav>
-
-    <div class="container my-5 p-3 d-flex justify-content-center">
-      <form
-        autocomplete="on"
-        class="login-form rounded bg-secondary text-white d-flex flex-column w-100 pt-2"
-        action="#"
-      >
-        <h3 class="d-flex justify-content-center my-2">會員登入</h3>
-        <div class="d-flex justify-content-center my-3 px-3">
-          <label for="account" style="padding-right: 12px">
-            <i class="fa-solid fa-user"></i>
-          </label>
-          <input
-            class="w-100 bg-primary border-0"
-            type="email"
-            id="account"
-            placeholder="電子信箱"
-          />
+    <!-- Main -->
+    <form method="post">
+      <div class="container bg-secondary mt-4 px-4 text-white">
+        <div class="row title py-3">
+          <div class="col-6 h1">發票</div>
+          <!-- process graph-->
+          <div class="col-6">
+            <div class="process-steps d-flex justify-content-between">
+              <div class="process-circle completed">
+                <svg
+                  class="show-top"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+              <div class="process-circle completed">
+                <svg
+                  class="show-top"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+              <div class="process-circle active"></div>
+            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-center px-3">
-          <label for="password" style="padding-right: 10px">
-            <i class="fa-sharp fa-solid fa-key"></i>
-          </label>
-          <input
-            class="w-100 bg-primary border-0"
-            type="password"
-            placeholder="密碼"
-            id="password"
-          />
+        <label class="h4 mb-0 mt-1" for="cardNum">發票</label>
+        <div class="row my-2 g-0">
+          <div class="col-6">
+            <div class="btn w-100 receipt-digital bg-beige m-0 p-2">
+              電子發票
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="btn w-100 receipt-mail bg-secondary m-0 p-2">
+              郵寄發票
+            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-center py-1 mt-2 mb-4">
-          <input type="checkbox" name="" id="checkbox" />
-          <label for="checkbox">記住我</label>
+        <label class="w-100 h4 mb-0 mt-1" for="email">電子郵件信箱</label>
+        <div class="row my-2">
+          <div class="col">
+            <input
+              type="text"
+              placeholder="abc@gmail.com"
+              id="email"
+              class="form-control form-control-lg bg-beige"
+            />
+          </div>
         </div>
-        <button
-          type="submit"
-          class="submit-btn d-flex justify-content-center bg-red text-white border-0 p-1 rounded-bottom"
-        >
-          登入
-        </button>
-      </form>
+        <label class="h4 mb-0 mt-1" for="taxID">統一編號（選填）</label>
+        <div class="row mb-3">
+          <div class="col-12 w-100 mb-3">
+            <input
+              type="text"
+              placeholder="12345678"
+              id="taxID"
+              class="form-control form-control-lg my-3 bg-beige"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+    <!--下一步-->
+    <div
+      class="container checkout bg-red text-center py-1 mb-3"
+      style="position: relative; top: -20px"
+    >
+      <a href="./checkout-success.html" class="btn text-white w-100">下一步</a>
     </div>
 
     <!-- 訂閱Email -->
@@ -170,6 +213,5 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>

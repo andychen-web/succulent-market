@@ -42,13 +42,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item h3">
+          <li class="nav-item">
             <a href="./index.html" class="nav-link text-bold"> 首頁</a>
           </li>
-          <li class="nav-item h3">
+          <li class="nav-item">
             <a href="./product.html" class="nav-link text-bold"> 商品 </a>
           </li>
-          <li class="nav-item h3">
+          <li class="nav-item">
             <a href="./login.html" class="nav-link text-bold"> 登入 </a>
           </li>
           <li class="nav-item">
@@ -56,7 +56,10 @@
               href="./cart.html"
               class="nav-link active d-flex align-items-center"
             >
-              <i class="fa-solid fa-cart-shopping" style="font-size: 2rem"></i>
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="font-size: 1.3rem"
+              ></i>
             </a>
           </li>
         </ul>
@@ -66,11 +69,9 @@
     <div class="container px-3 my-5">
       <div class="row">
         <div class="col-md-8 px-5 m-lg-0">
-          <div class="row bg-primary p-3 text-center"> <h3>您的購物車</h3></div>
+          <div class="row bg-primary p-3 text-center"><h3>您的購物車</h3></div>
           <!-- first item -->
-          <div
-            class="row py-4 border-bottom align-items-center"
-          >
+          <div class="row py-4 border-bottom align-items-center">
             <div
               class="col-md-2 col-6 bg-cover"
               style="
@@ -79,13 +80,13 @@
                 height: 120px;
               "
             ></div>
-            <div class="col-md-4 col-6 py-3">
+            <div class="col-md-3 col-6 py-3">
               <span
                 >多肉組合 <br />
                 NT$400</span
               >
             </div>
-            <div class="col-md-3 col-6 py-3">
+            <div class="col-md-3 col-6 py-3 mx-2">
               <div class="input-wrap">
                 <div class="btn btn-primary bg-white border-custom border-1">
                   ─
@@ -101,17 +102,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2 col-3 h4 py-2">NT$800</div>
-            <div class="col-md-1 col-3">
-              <div class="btn delete px-4">
+            <div class="col-md-3 col-3 pt-3 px-3 d-flex flex-row">
+              <h4 class="text-bold">NT$800</h4>
+              <div class="btn delete px-1 py-0">
                 <i class="fa-solid fa-trash-can"></i>
               </div>
             </div>
           </div>
           <!-- second item -->
-          <div
-            class="row py-4 border-bottom align-items-center"
-          >
+          <div class="row border-bottom align-items-center">
             <div
               class="col-md-2 col-6 bg-cover"
               style="
@@ -120,13 +119,13 @@
                 height: 120px;
               "
             ></div>
-            <div class="col-md-4 col-6 py-3">
+            <div class="col-md-3 col-6 py-3">
               <span
                 >沙漠仙人掌 <br />
                 NT$400</span
               >
             </div>
-            <div class="col-md-3 col-6 py-3">
+            <div class="col-md-3 col-6 py-3 mx-2">
               <div class="input-wrap">
                 <div class="btn btn-primary bg-white border-custom border-1">
                   ─
@@ -142,17 +141,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2 col-3 h4 py-2">NT$800</div>
-            <div class="col-md-1 col-3">
-              <div class="btn delete px-4">
+            <div class="col-md-3 col-3 pt-3 px-3 d-flex flex-row">
+              <h4 class="text-bold">NT$800</h4>
+              <div class="btn delete px-1 py-0">
                 <i class="fa-solid fa-trash-can"></i>
               </div>
             </div>
           </div>
           <!-- third item -->
-          <div
-            class="row py-4 border-bottom align-items-center"
-          >
+          <div class="row py-4 border-bottom align-items-center">
             <div
               class="col-md-2 col-6 bg-cover"
               style="
@@ -161,13 +158,13 @@
                 height: 120px;
               "
             ></div>
-            <div class="col-md-4 col-6 py-3">
+            <div class="col-md-3 col-6 py-3">
               <span
                 >開花仙人掌 <br />
                 NT$450</span
               >
             </div>
-            <div class="col-md-3 col-6 py-3">
+            <div class="col-md-3 col-6 py-3 mx-2">
               <div class="input-wrap">
                 <div class="btn btn-primary bg-white border-custom border-1">
                   ─
@@ -183,9 +180,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2 col-3 h4 py-2">NT$900</div>
-            <div class="col-md-1 col-3">
-              <div class="btn delete px-4">
+            <div class="col-md-3 col-3 pt-3 px-3 d-flex flex-row">
+              <h4 class="text-bold">NT$900</h4>
+              <div class="btn delete px-1 py-0">
                 <i class="fa-solid fa-trash-can"></i>
               </div>
             </div>
@@ -221,13 +218,7 @@
         <div class="row justify-content-center">
           <!-- 上半 -->
           <div
-            class="
-              col-md-3
-              d-flex
-              align-items-center
-              justify-content-center justify-content-md-start
-              mb-4 mb-md-0
-            "
+            class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0"
           >
             <img
               src="./images/ic-email.png"
@@ -252,17 +243,32 @@
       </div>
     </section>
 
-    <footer class="bg-primary overflow-hidden d-flex justify-content-center">
-      <div class="row p-4">
-        <div class="col">
-          <h4>聯絡資訊</h4>
-          <br />
-          09-8321543 <br />succulentmarket@yahoo.com
-          <br />新北市植新區勝利路200號
-        </div>
-        <div class="col d-flex align-items-end">
-          <img src="./images/icons8-facebook.svg" height="50px" alt="" />
-          <img src="./images/icons8-instagram.svg" height="50px" alt="" />
+    <footer class="bg-primary">
+      <div class="container">
+        <div class="row py-4 d-flex">
+          <div class="col">
+            <h4>聯絡資訊</h4>
+            <br />
+            09-8321543 <br />succulentmarket@yahoo.com
+            <br />新北市植新區勝利路200號 <br />
+            <img
+              src="./images/icons8-facebook.svg"
+              height="40px"
+              alt="Facebook"
+            />
+            <img
+              src="./images/icons8-instagram.svg"
+              height="40px"
+              alt="Insta"
+            />
+          </div>
+          <div class="col d-flex justify-content-end">
+            <img
+              src="./images/今天是個養多肉的好日子.svg"
+              height="200px"
+              alt="slogan"
+            />
+          </div>
         </div>
       </div>
     </footer>
