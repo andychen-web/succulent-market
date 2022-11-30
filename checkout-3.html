@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>多肉市集-發票</title>
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+  </head>
+
+  <body>
+    <nav class="container navbar navbar-expand-sm navbar-light px-5">
+      <div style="min-width: 230px">
+        <img
+          class="logo text img-fluid"
+          src="./images/logo-1.png"
+          style="width: 60px; height: 60px"
+          alt=""
+        />
+        <img
+          class="logo text img-fluid"
+          src="./images/logo-2.png"
+          style="width: 150px; height: 80px"
+          alt=""
+        />
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link text-bold"> 首頁</a>
+          </li>
+          <li class="nav-item">
+            <a href="./product.html" class="nav-link text-bold"> 商品 </a>
+          </li>
+          <li class="nav-item">
+            <a href="./login.html" class="nav-link text-bold"> 登入 </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="./cart.html"
+              class="nav-link active d-flex align-items-center"
+            >
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="font-size: 1.3rem"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main -->
+    <form method="post">
+      <div class="container bg-secondary mt-4 px-4 text-white">
+        <div class="row title py-3">
+          <div class="col-6 h1">發票</div>
+          <!-- process graph-->
+          <div class="col-6">
+            <div class="process-steps d-flex justify-content-between">
+              <div class="process-circle completed">
+                <svg
+                  class="show-top"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+              <div class="process-circle completed">
+                <svg
+                  class="show-top"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+              <div class="process-circle active"></div>
+            </div>
+          </div>
+        </div>
+        <label class="h4 mb-0 mt-1" for="cardNum">發票</label>
+        <div class="row my-2 g-0">
+          <div class="col-6">
+            <div class="btn w-100 receipt-digital bg-beige m-0 p-2">
+              電子發票
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="btn w-100 receipt-mail bg-secondary m-0 p-2">
+              郵寄發票
+            </div>
+          </div>
+        </div>
+        <label class="w-100 h4 mb-0 mt-1" for="email">電子郵件信箱</label>
+        <div class="row my-2">
+          <div class="col">
+            <input
+              type="text"
+              placeholder="abc@gmail.com"
+              id="email"
+              class="form-control form-control-lg bg-beige"
+            />
+          </div>
+        </div>
+        <label class="h4 mb-0 mt-1" for="taxID">統一編號（選填）</label>
+        <div class="row mb-3">
+          <div class="col-12 w-100 mb-3">
+            <input
+              type="text"
+              placeholder="12345678"
+              id="taxID"
+              class="form-control form-control-lg my-3 bg-beige"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+    <!--下一步-->
+    <div
+      class="container checkout bg-red text-center py-1 mb-3"
+      style="position: relative; top: -20px"
+    >
+      <a href="./checkout-success.html" class="btn text-white w-100">下一步</a>
+    </div>
+
+    <!-- 訂閱Email -->
+    <section class="py-5 bg-secondary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- 上半 -->
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0"
+          >
+            <img
+              src="./images/ic-email.png"
+              height="30"
+              style="filter: invert(1)"
+            />
+            <span class="h4 text-white mb-0 mx-3">訂閱郵件</span>
+          </div>
+          <!-- 下半 -->
+          <div class="col-md-6">
+            <div class="custom-form d-flex">
+              <input type="email" id="subscription" class="bg-primary" />
+              <button
+                class="d-flex align-items-center bg-red border-0"
+                style="padding: 1rem 1rem"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary">
+      <div class="container">
+        <div class="row py-4 d-flex">
+          <div class="col">
+            <h4>聯絡資訊</h4>
+            <br />
+            09-8321543 <br />succulentmarket@yahoo.com
+            <br />新北市植新區勝利路200號 <br />
+            <img
+              src="./images/icons8-facebook.svg"
+              height="40px"
+              alt="Facebook"
+            />
+            <img
+              src="./images/icons8-instagram.svg"
+              height="40px"
+              alt="Insta"
+            />
+          </div>
+          <div class="col d-flex justify-content-end">
+            <img
+              src="./images/今天是個養多肉的好日子.svg"
+              height="200px"
+              alt="slogan"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
