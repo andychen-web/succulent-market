@@ -127,9 +127,9 @@ body {
   background-image: url(../images/product-2.jpg);
 }
 .feature.three {
-  background-position: -50px center;
+  background-position: -90px center;
   background-size: cover;
-  background-image: url(../images/product-1.jpg);
+  background-image: url(../images/product-4.jpg);
 }
 .feature.five {
   background-image: url(../images/product-3.jpg);
@@ -145,7 +145,7 @@ body {
   background-color: #30402f;
   color: white;
   position: relative;
-  left: 2rem;
+  left: 0rem;
 }
 .text-bold {
   font-weight: 600;
